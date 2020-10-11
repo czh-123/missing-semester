@@ -7,10 +7,11 @@ move (){
 		if [[ $? -ne 0 ]];then
 			echo "in ~/missing/lecture2*/ no $file"
 			echo "create $file"
-			touch ~/missing/lecture2*/$file || echo "created failure"
+			#touch ~/missing/lecture2*/$file || echo "created failure"
 			dirname=$(dirname ~/missing/lecture2*/polo.sh)
 			echo $dirname
-			touch $dirname/$file || echo "created failure twice"	
+			#touch $dirname/$file || echo "created failure twice"
+			touch $dirname/$file && echo "created success" || echo "created failure"	
 		fi
 		#echo "created success"
 		cat "/tmp/missing/$file" > ~/missing/lecture2*/$file
