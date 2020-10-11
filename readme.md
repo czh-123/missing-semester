@@ -14,7 +14,7 @@ if[$var_1=$var_2];then // wrong
 if [ $var_1 = $var_2]  // whitespace
 
 ```
-* when using `>` it's actually `1>`
-  `1>&2` redirect the standard output to stderror 
-  `1>2`redirect the standard output to file `2`
+* when using `>` it's actually `1>`. <br>  // using <br> to mewline
+ `1>&2` redirect the standard output to stderror <br> 
+ `1>2`redirect the standard output to file `2` <br>
  
